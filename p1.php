@@ -125,8 +125,8 @@
             </nav>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
+            <button type="button" class="btn btn-outline-primary me-2" onclick="window.location.href='login.php'">Login</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='signup.php'">Sign-up</button>
             </div>
           </header>
         </container>
