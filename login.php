@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ล็อกอิน</title>
+    <title>เข้าสู่ระบบ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -43,16 +43,16 @@
 </head>
 <body>
 <main class="form-signin">
-    <form>
+    <form name="formLogin" action="p1.php" method="post">
         <img src="img/p4.png" alt="" width="100" height="150">
         <h1 class="h3 mb-3 fw-normal">เข้าสู่ระบบ</h1>
 
         <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name">
-            <label for="floatingInput">ชื่อผู้ใช้</label>
+            <input type="text" class="form-control" id="floatingName" name="usename" placeholder="ชื่อผู้ใช้งาน" required>
+            <label for="floatingName">ชื่อผู้ใช้งาน</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" name="txtpassword" placeholder="รหัสผ่าน" required>
             <label for="floatingPassword">รหัสผ่าน</label>
         </div>
 
@@ -63,6 +63,7 @@
             </label>
         </div>
         <button class="btn btn-primary w-100 py-2" type="submit">เข้าสู่ระบบ</button>
+        <button class="btn btn-danger w-100 py-2 mt-2" type="reset">ยกเลิก</button>
         <p class="mt-5 mb-3 text-body-secondary text-center">© 2024 Phorntip, Sakchai</p>
     </form>
 </main>
