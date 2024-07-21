@@ -44,7 +44,7 @@
 <body>
 <main class="form-signin">
     <form>
-        <img src="img/p4.png" alt="" width="72" height="57">
+        <img src="img/p4.png" alt="" width="100" height="150">
         <h1 class="h3 mb-3 fw-normal">เข้าสู่ระบบ</h1>
 
         <div class="form-floating mb-3">

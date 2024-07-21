@@ -43,20 +43,20 @@
 </head>
 <body>
 <main class="form-signin">
-    <form>
-        <img src="img/p4.png" alt="" width="72" height="57">
+    <form action="con1.php" method="post">
+        <img src="img/p4.png" alt="" width="100" height="150">
         <h1 class="h3 mb-3 fw-normal">สมัครสมาชิก</h1>
 
         <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name">
-            <label for="floatingInput">ชื่อผู้ใช้</label>
+            <input type="text" class="form-control" id="floatingName" name="name" placeholder="name" required>
+            <label for="floatingName">ชื่อผู้ใช้</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">อีเมล</label>
+            <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="name@example.com" required>
+            <label for="floatingEmail">อีเมล</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
             <label for="floatingPassword">รหัสผ่าน</label>
         </div>
         <button class="btn btn-primary w-100 py-2" type="submit">สมัครสมาชิก</button>
