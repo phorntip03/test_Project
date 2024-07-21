@@ -69,8 +69,8 @@
 </main>
 
 <!-- Modal สำหรับแจ้งสมัครสมาชิกสำเร็จ -->
-<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="successModalLabel">สมัครสมาชิกสำเร็จ</h5>
@@ -80,15 +80,16 @@
                 คุณได้สมัครสมาชิกสำเร็จแล้ว
             </div>
             <div class="modal-footer">
-                <a href="loginweb.php" class="btn btn-primary">ไปที่หน้า Login</a>
+                <a href="login.php" class="btn btn-primary">ไปที่หน้า Login</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Modal สำหรับแจ้งว่าชื่อผู้ใช้ซ้ำ -->
-<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="registerModalLabel">ข้อผิดพลาดในการสมัครสมาชิก</h5>
@@ -99,6 +100,7 @@
             </div>
             <div class="modal-footer">
                 <a href="signup.php" class="btn btn-primary">ลองใหม่</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
             </div>
         </div>
     </div>
